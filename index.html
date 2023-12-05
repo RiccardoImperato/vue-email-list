@@ -12,7 +12,13 @@
 </head>
 
 <body>
-    <div id="app"></div>
+    <div id="app">
+        <!-- Lista email -->
+        <ul>
+            <li v-for="email in emailList">{{ email }}</li>
+        </ul>
+        <!--/ Lista email -->
+    </div>
 
     <!-- Vue js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
