@@ -4,7 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Email List</title>
+    <!-- Google font Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
     <!-- Style -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- Axios -->
@@ -12,13 +16,12 @@
 </head>
 
 <body>
-    <div id="app">
-        <!-- Lista email -->
-        <ul>
-            <li v-for="email in emailList">{{ email }}</li>
-        </ul>
-        <!--/ Lista email -->
-    </div>
+    <h1>Random Email List</h1>
+    <!-- Lista email -->
+    <ul class="email-list" id="app">
+        <li v-for="email in emailList" class="email" v-cloak>{{ email }}</li>
+    </ul>
+    <!--/ Lista email -->
 
     <!-- Vue js -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
